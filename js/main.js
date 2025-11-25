@@ -289,11 +289,11 @@ class AutoluxApp {
     }
     
     showSuccessMessage() {
-        this.showNotification('✅ Заявка успешно отправлена! Мы свяжемся с вами в течение 15 минут.', 'success');
+        this.showNotification('Заявка успешно отправлена! Мы свяжемся с вами в течение 15 минут.', 'success');
     }
     
     showErrorMessage() {
-        this.showNotification('❌ Ошибка при отправке формы. Пожалуйста, позвоните нам: +7 (995) 123-44-77', 'error');
+        this.showNotification('Ошибка при отправке формы. Пожалуйста, позвоните нам: +7 (995) 123-44-77', 'error');
     }
     
     setupLogoClick() {
@@ -605,4 +605,5 @@ window.addEventListener('load', () => {
 // Handle browser back/forward buttons
 window.addEventListener('popstate', () => {
     window.scrollTo(0, 0);
+
 });
