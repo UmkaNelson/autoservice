@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоЛюкс - Профессиональный автосервис в Краснодаре</title>
+    <meta name="description" content="Автосервис АвтоЛюкс в Краснодаре - качественный ремонт и обслуживание автомобилей. Опытные мастера, современное оборудование, гарантия на работы.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/avatar.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header__content">
+                <a href="#home" class="logo" id="logo">
+                    <span class="logo__auto">Авто</span><span class="logo__lux">Люкс</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav__link">Главная</a>
+                    <a href="#services" class="nav__link">Услуги</a>
+                    <a href="#about" class="nav__link">О нас</a>
+                    <a href="#reviews" class="nav__link">Отзывы</a>
+                    <a href="#contact" class="nav__link">Контакты</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 id="hero-title" class="hero__title">
+                        <span data-title-word>Профессиональный</span>
+                        <span data-title-word>автосервис</span>
+                        <span data-title-word>в Краснодаре</span>
+                    </h1>
+                    <p class="hero__description">Качественный ремонт и обслуживание автомобилей любых марок. Опытные мастера, современное оборудование и гарантия на все работы.</p>
+                    <div class="hero__actions">
+                        <a href="#appointment-form-section" class="btn btn--primary" data-cta>
+                            <span class="btn__text">Записаться на обслуживание</span>
+                            <i class="fas fa-arrow-right btn__icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services" class="btn btn--secondary">
+                            <span class="btn__text">Наши услуги</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img 
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%231B1C18' width='600' height='400'/%3E%3Ccircle fill='%23D32F2F' opacity='0.1' cx='300' cy='200' r='150'/%3E%3Ctext fill='%23ffffff' font-family='Arial' font-size='24' x='300' y='180' text-anchor='middle' dominant-baseline='middle'%3EАвтосервис%3C/text%3E%3Ctext fill='%23D32F2F' font-family='Arial' font-size='24' x='300' y='210' text-anchor='middle' dominant-baseline='middle'%3EАвтоЛюкс%3C/text%3E%3Ctext fill='%23747070' font-family='Arial' font-size='16' x='300' y='240' text-anchor='middle' dominant-baseline='middle'%3EФото автосервиса%3C/text%3E%3C/svg%3E" 
+                        alt="Современный автосервис АвтоЛюкс в Краснодаре"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="hero__background"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="services-title" class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный спектр услуг по ремонту и обслуживанию автомобилей</p>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services loaded dynamically -->
+            </div>
+
+            <!-- Полный прайс-лист -->
+            <div class="price-list-section">
+                <h3 class="price-list-title">Цены на услуги</h3>
+                <p class="price-list-subtitle">Прозрачное ценообразование на все виды работ</p>
+                
+                <div class="price-list__content" id="priceList">
+                    <!-- Price list loaded dynamically -->
+                </div>
+                
+                <div class="price-list__note">
+                    <p><strong>Примечание:</strong> Указанные цены являются ориентировочными. Точная стоимость зависит от марки автомобиля и сложности работ.</p>
+                    <p>Стоимость уточняйте по тел. <a href="tel:+79951234477">+7 (995) 123-44-77</a>, <a href="tel:+79951237744">+7 (995) 123-77-44</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 id="about-title" class="section-title">О компании АвтоЛюкс</h2>
+                    <p class="about__description">Автосервис "АвтоЛюкс" в Краснодаре работает с 2019 года, предоставляя качественные услуги по ремонту и обслуживанию автомобилей.</p>
+                    <p class="about__description">Наши специалисты регулярно проходят обучение и используют современное диагностическое оборудование для точного определения неисправностей.</p>
+                    <div class="about__features" id="aboutFeatures">
+                        <!-- Features loaded dynamically -->
+                    </div>
+                    <a href="#appointment-form-section" class="btn btn--primary">Связаться с нами</a>
+                </div>
+                <div class="about__image">
+                    <img 
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%231B1C18' width='600' height='400'/%3E%3Ccircle fill='%23D32F2F' opacity='0.1' cx='300' cy='200' r='150'/%3E%3Ctext fill='%23ffffff' font-family='Arial' font-size='24' x='300' y='200' text-anchor='middle' dominant-baseline='middle'%3EАвтосервис%3C/text%3E%3Ctext fill='%23D32F2F' font-family='Arial' font-size='24' x='300' y='230' text-anchor='middle' dominant-baseline='middle'%3EАвтоЛюкс%3C/text%3E%3C/svg%3E" 
+                        alt="Автосервис АвтоЛюкс - современный и технологичный центр"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="reviews-title" class="section-title">Отзывы клиентов</h2>
+                <p class="section-subtitle">Что говорят наши клиенты о качестве наших услуг</p>
+            </div>
+            
+            <div class="reviews__container">
+                <!-- Основной отзыв -->
+                <div class="review-card review-card--featured">
+                    <div class="review-card__content">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-card__info">
+                                <h4 class="review-card__name">Александр Петровский</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            "Отличный сервис! Привез машину на диагностику, быстро нашли проблему 
+                            и качественно устранили. Цены адекватные, мастера вежливые. 
+                            Теперь только сюда буду обращаться. Рекомендую!"
+                        </p>
+                        <div class="review-card__meta">
+                            <span class="review-card__date">15 ноября 2024</span>
+                            <span class="review-card__source">Яндекс Карты</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Мини-виджет с ссылкой на все отзывы -->
+                <div class="reviews-widget-compact">
+                    <div class="reviews-widget__header">
+                        <h4>Больше отзывов на Яндекс Картах</h4>
+                        <div class="reviews-widget__rating">
+                            <span class="rating-value">5.0</span>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">на основе 12 отзывов</span>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-widget__preview">
+                        <div class="review-preview">
+                            <div class="review-preview__text">
+                                "Быстро и качественно сделали ТО. Цены приятно удивили..."
+                            </div>
+                            <div class="review-preview__author">- Марина С.</div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://yandex.ru/maps/org/carlux_motors/23125124095/reviews/" 
+                       target="_blank" 
+                       class="btn btn--secondary btn--full reviews-widget__link">
+                        <span class="btn__text">Читать все отзывы</span>
+                        <i class="fas fa-external-link-alt btn__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="contact-title" class="section-title">Контакты</h2>
+                <p class="section-subtitle">Свяжитесь с нами для записи или консультации</p>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p>г. Краснодар, ул. Бородинская, 123</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+79951234477">+7 (995) 123-44-77</a></p>
+                                <p><a href="tel:+79951237744">+7 (995) 123-77-44</a></p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Время работы</h3>
+                                <p>Пн-ВС: 9:00-20:00</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:carluxmotors@yandex.ru">carluxmotors@yandex.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form" id="appointment-form-section">
+                    <h3>Записаться на обслуживание</h3>
+                    <form id="custom-appointment-form" class="custom-form">
+                        <div class="form__group">
+                            <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                            <i class="fas fa-user form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" name="phone" class="form__input" placeholder="Телефон" required>
+                            <i class="fas fa-phone form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" name="car" class="form__input" placeholder="Марка и модель автомобиля" required>
+                            <i class="fas fa-car form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <select name="service" class="form__select" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="Диагностика">Диагностика</option>
+                                <option value="ТО и обслуживание">ТО и обслуживание</option>
+                                <option value="Двигатель">Ремонт двигателя</option>
+                                <option value="Тормозная система">Ремонт тормозов</option>
+                                <option value="Подвеска">Ремонт подвески</option>
+                                <option value="Электрика">Электрика</option>
+                                <option value="other">Другая услуга</option>
+                            </select>
+                            <i class="fas fa-tools form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <textarea name="message" class="form__input form__textarea" placeholder="Опишите проблему или дополнительные пожелания" rows="4"></textarea>
+                            <i class="fas fa-comment form__icon form__icon--textarea"></i>
+                        </div>
+                        <div class="form__group form__checkbox">
+                            <input type="checkbox" id="customPrivacyPolicy" name="privacyPolicy" required>
+                            <label for="customPrivacyPolicy">
+                                Я соглашаюсь с <a href="#" id="customPrivacyPolicyLink">политикой обработки персональных данных</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full" id="customSubmitBtn" disabled>
+                            <span class="btn__text">Отправить заявку</span>
+                            <i class="fas fa-paper-plane btn__icon"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="telegram-notification">
+                        <i class="fab fa-telegram"></i>
+                        <span>Заявка придет сразу в Telegram</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карта -->
+            <div class="map-container">
+                <div style="position:relative;overflow:hidden;border-radius: var(--radius-lg);">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?ll=39.099372%2C45.014879&mode=poi&poi%5Bpoint%5D=39.098208%2C45.014108&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D23125124095&z=17.55" 
+                        width="100%" 
+                        height="400" 
+                        frameborder="1" 
+                        allowfullscreen="true" 
+                        style="position:relative; border-radius: var(--radius-lg);"
+                        title="Автосервис АвтоЛюкс на карте Краснодара"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <a href="#home" class="logo">
+                        <span class="logo__auto">Авто</span><span class="logo__lux">Люкс</span>
+                    </a>
+                    <p class="footer__description">Профессиональный автосервис в Краснодаре с 2019 года. Качественный ремонт и обслуживание автомобилей.</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Услуги</h3>
+                    <nav class="footer__nav">
+                        <a href="#services" class="footer__link">Диагностика</a>
+                        <a href="#services" class="footer__link">Техническое обслуживание</a>
+                        <a href="#services" class="footer__link">Ремонт двигателя</a>
+                        <a href="#services" class="footer__link">Ремонт тормозов</a>
+                    </nav>
+                </div>
+                <div class="footer__section">
+                    <h3>Контакты</h3>
+                    <div class="footer__contacts">
+                        <p>г. Краснодар, ул. Бородинская, 123</p>
+                        <p><a href="tel:+79951234477">+7 (995) 123-44-77</a></p>
+                        <p><a href="tel:+79951237744">+7 (995) 123-77-44</a></p>
+                        <p><a href="mailto:carluxmotors@yandex.ru">carluxmotors@yandex.ru</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Disclaimer -->
+            <div class="footer__disclaimer">
+                <p>Информация на сайте носит ознакомительный характер и не является публичной офертой.</p>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; <span id="currentYear"></span> Автосервис "АвтоЛюкс". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно политики конфиденциальности -->
+    <div id="privacyModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="privacyModalTitle">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 id="privacyModalTitle">Политика обработки персональных данных</h2>
+                <button class="modal__close" data-modal-close aria-label="Закрыть модальное окно">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__body">
+                <div class="privacy-content">
+                    <h3>1. Общие положения</h3>
+                    <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Автосервис "АвтоЛюкс".</p>
+                    
+                    <h3>2. Основные понятия</h3>
+                    <p>Оператор - государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных.</p>
+                    
+                    <h3>3. Цели обработки персональных данных</h3>
+                    <p>Цель обработки персональных данных Пользователя — заключение, исполнение и прекращение гражданско-правовых договоров; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.</p>
+                    
+                    <h3>4. Правовые основания обработки персональных данных</h3>
+                    <p>Оператор обрабатывает персональные данных Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</p>
+                    
+                    <h3>5. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h3>
+                    <p>Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+                    
+                    <h3>6. Заключительные положения</h3>
+                    <p>Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты carluxmotors@yandex.ru.</p>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--primary" data-modal-close>Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
