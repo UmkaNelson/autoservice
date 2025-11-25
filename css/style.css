@@ -1544,4 +1544,55 @@ body {
     .section .btn--primary {
         max-width: 100%;
     }
+
+}
+/* Стили для выпадающего списка */
+.form__select {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+/* Убираем стандартную стрелку в IE */
+.form__select::-ms-expand {
+    display: none;
+}
+
+/* Стили для options */
+.form__select option {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    padding: 12px 16px;
+    border: none;
+}
+
+/* Стили при hover на option */
+.form__select option:hover {
+    background-color: var(--accent-primary) !important;
+    color: var(--c-white) !important;
+}
+
+/* Стили для выбранного option */
+.form__select option:checked {
+    background-color: var(--accent-primary) !important;
+    color: var(--c-white) !important;
+}
+
+/* Стили при фокусе */
+.form__select:focus {
+    border-color: var(--accent-primary) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1) !important;
+}
+
+/* Улучшаем внешний вид стрелки */
+.form__select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 16px center !important;
+    background-size: 16px !important;
 }
